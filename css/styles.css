@@ -54,7 +54,7 @@ nav>a{
         height: 600px;
     }
 
-.slider { max-width: 1000px;
+.slider {
 position: relative;
 margin: auto;
 
@@ -116,7 +116,7 @@ margin: auto;
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.4}
     to {opacity: 1}
   }
 

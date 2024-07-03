@@ -5,7 +5,6 @@
     <title>Portofolio Kiara</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <div id="Home">
     <header class="navigation-container">
@@ -25,17 +24,38 @@
 <main>
 <section>
     <div class="section_1" id="section1">
-    <header>
-        <h1>Hi <span id="displayNama"></span>, welcome to our website.</h1>
-    </header>
+        <header>
+            <h1>Hi <span id="displayNama"></span>, welcome to our website.</h1>
+        </header>
 
-    <article>
-    <p id="p1">Curated art for you</p>
+        <article>
+        <p id="p1">Curated art for you</p>
+        
+            <!-- Slideshow container -->
+            <div class="slider">
+                <div class="banner-container">
+                    <img src="assets/web_banner_2.png" alt="Description" class="main-image" style="width:100%">
+                </div>
+                <div class="banner-container">
+                    <img src="assets/banner2.png" alt="Description" class="main-image" style="width: 100%">
+                </div>
+                <div class="banner-container">
+                    <img src="assets/banner3.png" alt="Description" class="main-image" style="width: 100%">
+                </div>
 
-    <div class="banner-container">
-        <img src="assets/web_banner_2.png" alt="Description" class="main-image">
-    </div>
-    </article>
+                  <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </article>
     </div>
 </section>
 
@@ -81,9 +101,11 @@
         <h2 id="portfolio_header">Why choose us?</h2>
    </header>
        <div class="portfolio-content">
-            <img src="https://i.pinimg.com/originals/b2/2b/72/b22b721cf4a0aa682e9da7ade79aa1e4.jpg" alt="Description" class="image">
-            <p>Our team of art enthusiasts here are a diverse and vibrant group, united by a shared passion for creativity and visual expression. Each member brings a unique perspective, drawing from backgrounds in fine arts, graphic design, and digital media. Together, we curate stunning visual experiences that captivate and inspire. Whether it's through innovative design projects, immersive exhibitions, or collaborative community events, our team thrives on pushing the boundaries of artistic innovation. Committed to excellence and driven by imagination, we transform ideas into compelling visual narratives that resonate with audiences and elevate our company's creative vision.</p>
-       </div>
+            <img src="assets/content.png" alt="Description" class="image" style="width: 100%;">
+            <div class="portfolio_p">
+                <p>Our team of art enthusiasts here are a diverse and vibrant group, united by a shared passion for creativity and visual expression. Each member brings a unique perspective, drawing from backgrounds in fine arts, graphic design, and digital media. Together, we curate stunning visual experiences that captivate and inspire. Whether it's through innovative design projects, immersive exhibitions, or collaborative community events, our team thrives on pushing the boundaries of artistic innovation. Committed to excellence and driven by imagination, we transform ideas into compelling visual narratives that resonate with audiences and elevate our company's creative vision.</p>
+            </div>
+        </div>
     </div>
 
 
@@ -97,21 +119,21 @@
         <div class="form-container">
             <h2>Contact Us</h2>
             <form id="messageForm">
-                <label for="nama">Nama:</label>
+                <label for="nama">Name:</label>
                 <input type="text" id="nama" name="nama" required>
 
-                <label for="tanggal_lahir">Tanggal Lahir:</label>
+                <label for="tanggal_lahir">Date Of Birth:</label>
                 <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
 
-                <label>Jenis Kelamin:</label>
+                <label>Gender:</label>
                 <div class="gender">
                     <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-Laki" required>
-                    <label for="laki-laki">Laki-Laki</label>
+                    <label for="laki-laki">Male</label>
                     <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
-                    <label for="perempuan">Perempuan</label>
+                    <label for="perempuan">Female</label>
                 </div>
 
-                <label for="pesan">Pesan:</label>
+                <label for="pesan">Message:</label>
                 <textarea id="pesan" name="pesan" required></textarea>
 
                 <button type="submit">Submit</button>
@@ -120,10 +142,10 @@
 
         <div class="display-container">
             <p>Current time: <span id="currentTime"></span></p>
-            <p>Nama: <span id="displayNama"></span></p>
-            <p>Tanggal Lahir: <span id="displayTanggalLahir"></span></p>
-            <p>Jenis Kelamin: <span id="displayJenisKelamin"></span></p>
-            <p>Pesan: <span id="displayPesan"></span></p>
+            <p>Name: <span id="displayNama"></span></p>
+            <p>Date Of Birth: <span id="displayTanggalLahir"></span></p>
+            <p>Gender: <span id="displayJenisKelamin"></span></p>
+            <p>Message: <span id="displayPesan"></span></p>
         </div>
     </div>
     <script src="js/script.js" type="module"></script>

@@ -1,12 +1,20 @@
+html { scroll-behavior: smooth;}
+
 body {
     background-color: #242424;
-}
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: larger;
+   }
 
+   header {
+    font-size: x-large;
+    color: gainsboro
+   }
 .logo-icon {
     width : 50px;
     height : 50px;
 
-    background-image: url(https://fastly.picsum.photos/id/377/200/200.jpg?hmac=rcJQMvK0zOsZkiVu3ncmb8j3LjiGAySY2-TqaHP5jnw);
     background-size: cover;
     border-radius: 50%;
 }
@@ -23,6 +31,18 @@ nav>a{
     padding-left: 32px;
     padding-right: 32px;
     border: 1px solid;
+    color: #242424;
+    background-color: whitesmoke;
+    border-radius: 25%;
+}
+
+#p1 {
+    color: whitesmoke;
+    font-size: larger;
+}
+
+.section_1 {
+    text-align: center;
 }
 
 .main-image     {
@@ -32,18 +52,18 @@ nav>a{
 .banner-container {
     height: 600px;
     width: 100%;
-    border: 1px solid;
 }
 
-.profile-content {
+article.profile-content {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 50px;
 }
 
 .profile-item {
     text-align: center;
     color: azure;
-    font-size: large;
+    font-size: x-large
 }
 
 .profile-image {
@@ -68,9 +88,13 @@ nav>a{
   
     .image {
         padding-right: 25px;
-        padding-bottom: 50px;
+        padding-bottom: 75px;
         width: 650px;
         height: 450px;
+    }
+
+    #portfolio_header {
+        text-align: center;
     }
 
 .container {
@@ -113,7 +137,7 @@ input, textarea {
 }
 
 button {
-    background-color: #2c352c;
+    background-color: #2a2b2e;
     color: white;
     padding: 10px 20px;
     border: none;
